@@ -1,0 +1,4 @@
+id,text,label
+1,这是第一条正常流量,benign
+2,检测到可疑端口扫描,attack
+3,含有辱骂词汇的评论,abusive

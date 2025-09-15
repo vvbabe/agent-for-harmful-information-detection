@@ -1,0 +1,64 @@
+2025-09-15 19:57:30 | INFO | datasets | Converted 2 records -> /private/var/folders/lk/84pwgsjx2bl9czdfqvcc1g400000gn/T/pytest-of-boen/pytest-0/test_convert_csv_jsonl0/out.jsonl
+2025-09-15 19:57:30 | INFO | datasets | Converted 2 records -> /private/var/folders/lk/84pwgsjx2bl9czdfqvcc1g400000gn/T/pytest-of-boen/pytest-0/test_convert_json_jsonl0/out2.jsonl
+2025-09-15 19:57:30 | INFO | preprocess | Cleaned 2 records -> /private/var/folders/lk/84pwgsjx2bl9czdfqvcc1g400000gn/T/pytest-of-boen/pytest-0/test_process_jsonl0/out.jsonl
+2025-09-15 19:59:54 | INFO | datasets | Processing dataset: demo
+2025-09-15 19:59:54 | INFO | datasets | Downloaded file:///Users/boen/Desktop/信息安全设计与实践II/INFO_SAFE_II/datasets/demo_input.csv -> datasets/demo/demo_input.csv
+2025-09-15 19:59:54 | INFO | datasets | Converted 3 records -> datasets/demo/demo.jsonl
+2025-09-15 19:59:54 | INFO | datasets | All done
+2025-09-15 20:00:10 | INFO | preprocess | Cleaned 3 records -> datasets/demo/demo.clean.jsonl
+2025-09-15 20:00:10 | INFO | preprocess | Done: 3 rows
+2025-09-15 20:04:54 | INFO | datasets | Processing dataset: HateSpeech-Davidson
+2025-09-15 20:05:03 | INFO | datasets | Downloaded https://raw.githubusercontent.com/t-davidson/hate-speech-and-offensive-language/master/data/labeled_data.csv -> datasets/HateSpeech-Davidson/labeled_data.csv
+2025-09-15 20:05:03 | INFO | datasets | Converted 24783 records -> datasets/HateSpeech-Davidson/HateSpeech-Davidson.jsonl
+2025-09-15 20:05:03 | INFO | datasets | All done
+2025-09-15 20:05:15 | INFO | preprocess | Cleaned 24783 records -> datasets/HateSpeech-Davidson/HateSpeech-Davidson.clean.jsonl
+2025-09-15 20:05:15 | INFO | preprocess | Done: 24783 rows
+2025-09-15 20:06:01 | INFO | datasets | Processing dataset: SpamAssassin-Public
+2025-09-15 20:06:22 | INFO | datasets | Downloaded https://spamassassin.apache.org/old/publiccorpus/20030228_spam.tar.bz2 -> datasets/SpamAssassin-Public/20030228_spam.tar.bz2
+2025-09-15 20:06:23 | INFO | datasets | Downloaded https://spamassassin.apache.org/old/publiccorpus/20030228_easy_ham.tar.bz2 -> datasets/SpamAssassin-Public/20030228_easy_ham.tar.bz2
+2025-09-15 20:06:24 | INFO | datasets | Converted 3002 records -> datasets/SpamAssassin-Public/SpamAssassin-Public.jsonl
+2025-09-15 20:06:24 | INFO | datasets | All done
+2025-09-15 20:06:34 | INFO | preprocess | Cleaned 2 records -> datasets/SpamAssassin-Public/SpamAssassin-Public.clean.jsonl
+2025-09-15 20:06:34 | INFO | preprocess | Done: 2 rows
+2025-09-15 20:07:47 | INFO | datasets | Converted 2 records -> /private/var/folders/lk/84pwgsjx2bl9czdfqvcc1g400000gn/T/pytest-of-boen/pytest-1/test_convert_csv_jsonl0/out.jsonl
+2025-09-15 20:07:47 | INFO | datasets | Converted 2 records -> /private/var/folders/lk/84pwgsjx2bl9czdfqvcc1g400000gn/T/pytest-of-boen/pytest-1/test_convert_json_jsonl0/out2.jsonl
+2025-09-15 20:07:47 | INFO | preprocess | Cleaned 2 records -> /private/var/folders/lk/84pwgsjx2bl9czdfqvcc1g400000gn/T/pytest-of-boen/pytest-1/test_process_jsonl0/out.jsonl
+2025-09-15 20:08:07 | INFO | crawler_weibo | Page 1 -> 0 items
+2025-09-15 20:08:10 | INFO | crawler_weibo | Saved 0 items to weibo_data.jsonl
+2025-09-15 20:10:19 | INFO | datasets | Processing dataset: SpamAssassin-Public
+2025-09-15 20:10:31 | INFO | datasets | Downloaded https://spamassassin.apache.org/old/publiccorpus/20030228_spam.tar.bz2 -> datasets/SpamAssassin-Public/20030228_spam.tar.bz2
+2025-09-15 20:10:33 | INFO | datasets | Downloaded https://spamassassin.apache.org/old/publiccorpus/20030228_easy_ham.tar.bz2 -> datasets/SpamAssassin-Public/20030228_easy_ham.tar.bz2
+2025-09-15 20:10:34 | INFO | datasets | Converted 3002 records -> datasets/SpamAssassin-Public/SpamAssassin-Public.jsonl
+2025-09-15 20:10:34 | INFO | datasets | All done
+2025-09-15 20:11:29 | INFO | datasets | Processing dataset: SpamAssassin-Public
+2025-09-15 20:11:56 | INFO | datasets | Downloaded https://spamassassin.apache.org/old/publiccorpus/20030228_spam.tar.bz2 -> datasets/SpamAssassin-Public/20030228_spam.tar.bz2
+2025-09-15 20:11:59 | INFO | datasets | Downloaded https://spamassassin.apache.org/old/publiccorpus/20030228_easy_ham.tar.bz2 -> datasets/SpamAssassin-Public/20030228_easy_ham.tar.bz2
+2025-09-15 20:12:00 | INFO | datasets | Converted 3002 records -> datasets/SpamAssassin-Public/SpamAssassin-Public.jsonl
+2025-09-15 20:12:00 | INFO | datasets | All done
+2025-09-15 20:23:29 | INFO | datasets | Converted 2 records -> /private/var/folders/lk/84pwgsjx2bl9czdfqvcc1g400000gn/T/pytest-of-boen/pytest-2/test_convert_csv_jsonl0/out.jsonl
+2025-09-15 20:23:29 | INFO | datasets | Converted 2 records -> /private/var/folders/lk/84pwgsjx2bl9czdfqvcc1g400000gn/T/pytest-of-boen/pytest-2/test_convert_json_jsonl0/out2.jsonl
+2025-09-15 20:23:29 | INFO | preprocess | Cleaned 2 records -> /private/var/folders/lk/84pwgsjx2bl9czdfqvcc1g400000gn/T/pytest-of-boen/pytest-2/test_process_jsonl0/out.jsonl
+2025-09-15 20:23:45 | WARNING | crawler_weibo | Selenium init failed, fallback to requests: No module named 'distutils'
+2025-09-15 20:23:45 | INFO | crawler_weibo | Page 1 -> 0 items
+2025-09-15 20:23:49 | INFO | crawler_weibo | Saved 0 items to weibo_data.jsonl
+2025-09-15 20:23:58 | WARNING | crawler_xhs | Selenium init failed, fallback to requests: No module named 'distutils'
+2025-09-15 20:23:59 | INFO | crawler_xhs | Page 1 -> 0 items
+2025-09-15 20:24:02 | INFO | crawler_xhs | Saved 0 items to xiaohongshu_data.jsonl
+2025-09-15 20:26:18 | WARNING | crawler_weibo | Selenium init failed, fallback to requests: Binary Location Must be a String
+2025-09-15 20:26:18 | INFO | crawler_weibo | Page 1 -> 0 items
+2025-09-15 20:26:22 | INFO | crawler_weibo | Saved 0 items to weibo_data.jsonl
+2025-09-15 20:26:52 | WARNING | crawler_xhs | Selenium init failed, fallback to requests: Binary Location Must be a String
+2025-09-15 20:26:53 | INFO | crawler_xhs | Page 1 -> 0 items
+2025-09-15 20:26:56 | INFO | crawler_xhs | Saved 0 items to xiaohongshu_data.jsonl
+2025-09-15 20:28:51 | INFO | datasets | Converted 2 records -> /private/var/folders/lk/84pwgsjx2bl9czdfqvcc1g400000gn/T/pytest-of-boen/pytest-3/test_convert_csv_jsonl0/out.jsonl
+2025-09-15 20:28:51 | INFO | datasets | Converted 2 records -> /private/var/folders/lk/84pwgsjx2bl9czdfqvcc1g400000gn/T/pytest-of-boen/pytest-3/test_convert_json_jsonl0/out2.jsonl
+2025-09-15 20:28:51 | INFO | preprocess | Cleaned 2 records -> /private/var/folders/lk/84pwgsjx2bl9czdfqvcc1g400000gn/T/pytest-of-boen/pytest-3/test_process_jsonl0/out.jsonl
+2025-09-15 20:33:09 | INFO | datasets | Processing dataset: HateSpeech-Davidson
+2025-09-15 20:33:22 | INFO | datasets | Downloaded https://raw.githubusercontent.com/t-davidson/hate-speech-and-offensive-language/master/data/labeled_data.csv -> datasets/HateSpeech-Davidson/labeled_data.csv
+2025-09-15 20:33:22 | INFO | datasets | Converted 24783 records -> datasets/HateSpeech-Davidson/HateSpeech-Davidson.jsonl
+2025-09-15 20:33:22 | INFO | datasets | All done
+2025-09-15 20:33:41 | INFO | datasets | Processing dataset: SpamAssassin-Public
+2025-09-15 20:34:18 | INFO | datasets | Downloaded https://spamassassin.apache.org/old/publiccorpus/20030228_spam.tar.bz2 -> datasets/SpamAssassin-Public/20030228_spam.tar.bz2
+2025-09-15 20:34:20 | INFO | datasets | Downloaded https://spamassassin.apache.org/old/publiccorpus/20030228_easy_ham.tar.bz2 -> datasets/SpamAssassin-Public/20030228_easy_ham.tar.bz2
+2025-09-15 20:34:21 | INFO | datasets | Converted 3002 records -> datasets/SpamAssassin-Public/SpamAssassin-Public.jsonl
+2025-09-15 20:34:21 | INFO | datasets | All done

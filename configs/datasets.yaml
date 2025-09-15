@@ -1,0 +1,63 @@
+# Example dataset configuration
+# Each dataset has a name, a list of urls, target filename (optional), and type (csv/json/jsonl/pcap/zip)
+# For zip archives, we try to find CSV/JSON/JSONL inside and convert to JSONL.
+
+CIC-IDS2017:
+  urls:
+    - https://www.unb.ca/cic/datasets/ids-2017.html # metadata page (placeholder)
+  type: csv
+  notes: "Provide direct file URLs where possible; this is an example entry."
+
+UNSW-NB15:
+  urls:
+    - https://research.unsw.edu.au/projects/unsw-nb15-dataset # metadata page (placeholder)
+  type: csv
+
+SpamAssassin:
+  urls:
+    - https://spamassassin.apache.org/old/publiccorpus/20030228_easy_ham.tar.bz2
+    - https://spamassassin.apache.org/old/publiccorpus/20030228_spam.tar.bz2
+  type: tar
+
+Kaggle-Toxic-Comments:
+  urls:
+    - https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data # requires Kaggle API
+  type: csv
+  notes: "Use Kaggle API if available; may require authentication."
+
+demo:
+  urls:
+    - file:///Users/boen/Desktop/信息安全设计与实践II/INFO_SAFE_II/datasets/demo_input.csv
+  type: csv
+  notes: "Local demo CSV for pipeline verification"
+
+HateSpeech-Davidson:
+  urls:
+    - https://raw.githubusercontent.com/t-davidson/hate-speech-and-offensive-language/master/data/labeled_data.csv
+  type: csv
+  notes: "Hate speech and offensive language labeled tweets"
+
+SpamAssassin-Public:
+  urls:
+    - https://spamassassin.apache.org/old/publiccorpus/20030228_easy_ham.tar.bz2
+    - https://spamassassin.apache.org/old/publiccorpus/20030228_spam.tar.bz2
+  type: tar
+  notes: "Public corpus with ham/spam emails"
+
+CIC-IDS2017-official:
+  urls:
+    - https://www.unb.ca/cic/datasets/ids-2017.html
+  type: csv
+  notes: "Official page - replace with direct file links if available"
+
+UNSW-NB15-official:
+  urls:
+    - https://research.unsw.edu.au/projects/unsw-nb15-dataset
+  type: csv
+  notes: "Official page - replace with direct file links if available"
+
+Kaggle-Toxic-Comments:
+  urls:
+    - https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data
+  type: csv
+  notes: "Requires Kaggle API/authentication"
