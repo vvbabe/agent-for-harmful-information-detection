@@ -1,0 +1,17 @@
+# MCP Server并调用实现的tool
+#注册prompt server
+servers:
+  generation: servers/generation
+  prompt: servers/prompt
+
+# MCP Client Pipeline
+pipeline:
+- prompt.qa_rag_boxed
+- generation.generate
+
+# Prompt Server 参数
+prompt:
+  template1: prompt/qa_rag_boxed.jinja
+  template2: prompt/qa_rag_boxed.jinja
+  #这是因为之前初始化了两个函数
+

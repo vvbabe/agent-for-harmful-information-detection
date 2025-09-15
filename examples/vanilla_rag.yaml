@@ -1,0 +1,23 @@
+# Vanilla RAG
+
+# MCP Server
+#benchmark是数据来源，就是来自于哪个数据集
+servers:
+  benchmark: servers/benchmark
+  retriever: servers/retriever
+  prompt: servers/prompt
+  generation: servers/generation
+  evaluation: servers/evaluation
+  custom: servers/custom
+
+# MCP Client Pipeline
+pipeline:
+- benchmark.get_data
+# 如果没有部署好的 retriever，可替换为以下两步：
+# - retriever.retriever_init      
+# - retriever.retriever_search
+- retriever.retriever_deploy_search
+- prompt.qa_rag_boxed
+- generation.generate
+- custom.output_extract_from_boxed
+- evaluation.evaluate

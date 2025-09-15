@@ -1,0 +1,18 @@
+benchmark:
+  name: asqa
+  path: data/data1.jsonl
+  key_map:
+    q_ls: question
+    gt_ls: golden_answers
+  shuffle: false
+  seed: 42
+  limit: 2
+
+#name：数据集名称，用于日志、调试或在系统中标识当前加载的数据集。
+#path：数据文件路径，作为 get_data 工具的读取入口。
+#key_map：字段映射表，指定从每条样本中提取哪些字段，并设定其别名。
+#例如：q_ls: question 表示将原字段 question 映射为 q_ls。
+#如需添加额外字段，可在此处扩展，如 p_ls: retrieved_passage。
+#shuffle：是否启用随机采样
+#seed：设置随机种子
+#limit：加载的样本数量；-1代表加载全部数据

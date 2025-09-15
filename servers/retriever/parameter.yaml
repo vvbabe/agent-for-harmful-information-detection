@@ -1,0 +1,32 @@
+#Retriever Server 是 UR-2.0 中的向量检索模块，集成了从文本嵌入、索引构建，到检索以及在线启动模型和模型部署多个功能。
+#支持端到端的向量检索流程，适用于大型语料库的快速向量化和召回
+retriever_path: openbmb/MiniCPM-Embedding-Light
+corpus_path: data/sample_hotpotqa_corpus_5.jsonl
+embedding_path: embedding/embedding.npy
+index_path: index/index.index
+
+# infinity_emb config
+infinity_kwargs:
+  bettertransformer: false
+  pooling_method: auto
+  device: cuda
+  batch_size: 1024
+
+cuda_devices: "0,1"
+query_instruction: "Query: "
+faiss_use_gpu: True
+top_k: 5
+overwrite: false
+retriever_url: http://localhost:8080
+index_chunk_size: 50000
+
+# OpenAI API configuration
+use_openai: false
+openai_model: "text-embedding-3-small"
+api_base: ""
+api_key: ""
+
+# LanceDB configuration
+lancedb_path: "lancedb/"
+table_name: "vector_index"
+filter_expr: null

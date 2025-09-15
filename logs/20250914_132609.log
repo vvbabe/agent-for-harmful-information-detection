@@ -1,0 +1,7 @@
+[09/14/25 13:26:09] INFO [UltraRAG.Client] Building configuration examples/vanilla_rag.yaml
+[09/14/25 13:26:09] WARNING [UltraRAG.Client] No parameter.yaml found for benchmark, skipping
+[09/14/25 13:26:09] WARNING [UltraRAG.Client] No parameter.yaml found for retriever, skipping
+[09/14/25 13:26:09] WARNING [UltraRAG.Client] No parameter.yaml found for prompt, skipping
+[09/14/25 13:26:09] WARNING [UltraRAG.Client] No parameter.yaml found for generation, skipping
+[09/14/25 13:26:09] WARNING [UltraRAG.Client] No parameter.yaml found for evaluation, skipping
+[09/14/25 13:26:09] WARNING [UltraRAG.Client] No parameter.yaml found for custom, skipping
