@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "name": "UltraRAG Debug",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/ultrarag/client.py",
+            "console": "integratedTerminal",
+            "args": [
+                "run",
+                "${workspaceFolder}/vanilla_rag.yaml" 
+            ],
+            "cwd": "${workspaceFolder}",
+        }
+    ]
+}

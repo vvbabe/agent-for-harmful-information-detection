@@ -1,0 +1,3 @@
+#evaluate:对一组模型生成的答案进行评估，并保存结果
+metrics: [ 'acc', 'f1', 'em', 'coverem', 'rouge-l' ]
+save_path: output/asqa.json
