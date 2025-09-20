@@ -1,6 +1,3 @@
-明白了，你希望把你提供的项目说明、数据说明、使用流程和环境信息整合成一个完整、条理清晰的 README 文档。我帮你整理成一个可直接使用的 `README.md` 示例，保留所有关键内容，同时按模块和使用流程结构化：
-
-```markdown
 # agent-for-harmful-information-detection
 
 基于UltraRAG的网络威胁检测agent，集成 **DeepSeek-v2-lite** 和 **minicpm-2b embedding 模型**。提供数据获取、预处理、爬取和 JSONL 转换流水线，便于安全实验和模型训练。
@@ -148,10 +145,9 @@ pytest -q
 * **GPU**：NVIDIA 4090
 * **系统**：Ubuntu / Python 3.10+
 * **模型**：
-
   * DeepSeek-v2-lite
   * minicpm-2b embedding
 * **Agent**：基于 UltraRAG
 
 ![alt text](image.png)
-清洗过的数据
+*清洗过的数据*
