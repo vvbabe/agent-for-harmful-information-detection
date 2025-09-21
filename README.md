@@ -159,3 +159,19 @@ pytest -q
   faiss_use_gpu: true
   index_chunk_size: 50000
   index_path: index/index.index
+
+结果存储：
+评价结果：UltraRAG/output
+输出结果：UltraRAG/output.txt
+prompt：UltraRAG/qa_rag_boxed.jinja
+
+使用可视化脚本快速浏览模型输出
+python ./script/case_study.py \
+  --data output/memory_nq_vanilla_rag_20250921_052256.json \
+  --host 0.0.0.0 \
+  --port 8020 \
+  --title "Case Study Viewer"
+![alt text](image-1.png)
+
+运行
+ultrarag run vanilla_rag.yaml
