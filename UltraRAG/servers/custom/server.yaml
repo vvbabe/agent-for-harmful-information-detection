@@ -1,0 +1,40 @@
+path: servers/custom/src/custom.py
+parameter: servers/custom/parameter.yaml
+tools:
+  search_r1_query_extract:
+    input:
+      ans_ls: ans_ls
+    output:
+    - extract_query_list
+  r1_searcher_query_extract:
+    input:
+      ans_ls: ans_ls
+    output:
+    - extract_query_list
+  iterretgen_nextquery:
+    input:
+      q_ls: q_ls
+      ans_ls: ret_psg
+    output:
+    - nextq_ls
+  output_extract_from_boxed:
+    input:
+      ans_ls: ans_ls
+    output:
+    - pred_ls
+  ircot_get_first_sent:
+    input:
+      ans_ls: ans_ls
+    output:
+    - q_ls
+  ircot_extract_ans:
+    input:
+      ans_ls: ans_ls
+    output:
+    - pred_ls
+  search_o1_query_extract:
+    input:
+      ans_ls: ans_ls
+    output:
+    - extract_query_list
+prompts: {}

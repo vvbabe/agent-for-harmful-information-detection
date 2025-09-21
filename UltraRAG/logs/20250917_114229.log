@@ -1,0 +1,7 @@
+[09/17/25 11:42:29] INFO [UltraRAG.Client] Executing pipeline with configuration examples/sayhello.yaml
+[09/17/25 11:42:29] INFO [UltraRAG.Client] Initializing servers...
+[09/17/25 11:42:29] INFO [UltraRAG.Client] Available tools: ['greet']
+[09/17/25 11:42:29] INFO [UltraRAG.Client] Executing step: sayhello.greet
+[09/17/25 11:42:29] INFO [UltraRAG.sayhello] Hello, UltraRAG 2.0!
+[09/17/25 11:42:29] INFO [UltraRAG.Client] Pipeline execution completed.
+[09/17/25 11:42:29] INFO [UltraRAG.Client] Memory output saved to output/memory__sayhello_20250917_114229.json

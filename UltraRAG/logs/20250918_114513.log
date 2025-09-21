@@ -1,0 +1,25 @@
+[09/18/25 11:45:16] INFO [UltraRAG.generation] Starting vLLM model on GPU(s): 1
+[09/18/25 11:45:16] INFO [UltraRAG.generation] Waiting for vLLM service at http://localhost:8006/v1 to be ready...
+[09/18/25 11:45:36] INFO [UltraRAG.generation] vLLM service is ready.
+[09/18/25 11:45:36] INFO [UltraRAG.generation] vLLM service started at http://localhost:8006/v1
+[09/18/25 11:47:15] INFO [UltraRAG.evaluation] Evaluation results saved to output/evaluate_results_20250918_114715.json
+[09/18/25 11:47:15] INFO [UltraRAG.evaluation] 
+╒══════════╤═════════╕
+│ Metric   │   Value │
+╞══════════╪═════════╡
+│ acc      │   0     │
+├──────────┼─────────┤
+│ f1       │   0.003 │
+├──────────┼─────────┤
+│ em       │   0     │
+├──────────┼─────────┤
+│ coverem  │   0.68  │
+├──────────┼─────────┤
+│ stringem │   0     │
+├──────────┼─────────┤
+│ rouge-1  │   0.003 │
+├──────────┼─────────┤
+│ rouge-2  │   0     │
+├──────────┼─────────┤
+│ rouge-l  │   0.003 │
+╘══════════╧═════════╛

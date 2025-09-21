@@ -1,0 +1,30 @@
+# Vanilla RAG
+
+# MCP Server
+#benchmark是数据来源，就是来自于哪个数据集
+servers:
+  benchmark: servers/benchmark
+  retriever: servers/retriever
+  prompt: servers/prompt
+  generation: servers/generation
+  evaluation: servers/evaluation
+  custom: servers/custom
+
+# MCP Client Pipeline
+pipeline:
+#看benchmark的api,只有get_data一个方法
+- benchmark.get_data
+#初始化检索器
+- retriever.retriever_init
+#检索
+- retriever.retriever_search
+#初始化本地部署好的模型
+- generation.initialize_local_vllm
+#要将检索到的query以什么模式给大模型
+- prompt.qa_rag_boxed
+#大模型生成
+- generation.generate
+#方便评估，利用boxed功能
+- custom.output_extract_from_boxed
+#评估答案
+- evaluation.evaluate

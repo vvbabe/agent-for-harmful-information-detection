@@ -1,0 +1,24 @@
+retriever:
+  parameter: servers/retriever/parameter.yaml
+  path: servers/retriever/src/retriever.py
+  tools:
+    retriever_embed:
+      input:
+        embedding_path: $embedding_path
+        is_multimodal: $is_multimodal
+        overwrite: $overwrite
+    retriever_index:
+      input:
+        embedding_path: $embedding_path
+        index_chunk_size: $index_chunk_size
+        index_path: $index_path
+        overwrite: $overwrite
+    retriever_init:
+      input:
+        corpus_path: $corpus_path
+        cuda_devices: $cuda_devices
+        faiss_use_gpu: $faiss_use_gpu
+        index_path: $index_path
+        infinity_kwargs: $infinity_kwargs
+        is_multimodal: $is_multimodal
+        retriever_path: $retriever_path

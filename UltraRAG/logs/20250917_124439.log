@@ -1,0 +1,7 @@
+[09/17/25 12:44:39] INFO [UltraRAG.Client] Building configuration examples/retriever_and_embedding.yaml
+[09/17/25 12:44:39] INFO [UltraRAG.Client] Building server configs
+[09/17/25 12:44:40] INFO [UltraRAG.Client] server.yaml for retriever has been built already
+[09/17/25 12:44:40] INFO [UltraRAG.Client] Saving all parameters to examples/parameter/retriever_and_embedding_parameter.yaml
+[09/17/25 12:44:40] INFO [UltraRAG.Client] Saving all server configs to examples/server/retriever_and_embedding_server.yaml
+[09/17/25 12:44:40] INFO [UltraRAG.Client] All parameters have been saved in examples/parameter/retriever_and_embedding_parameter.yaml
+[09/17/25 12:44:40] INFO [UltraRAG.Client] All server configurations have been saved in examples/server/retriever_and_embedding_server.yaml

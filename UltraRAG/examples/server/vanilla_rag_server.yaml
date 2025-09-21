@@ -1,0 +1,85 @@
+benchmark:
+  parameter: servers/benchmark/parameter.yaml
+  path: servers/benchmark/src/benchmark.py
+  tools:
+    get_data:
+      input:
+        benchmark: $benchmark
+      output:
+      - q_ls
+      - gt_ls
+custom:
+  parameter: servers/custom/parameter.yaml
+  path: servers/custom/src/custom.py
+  tools:
+    output_extract_from_boxed:
+      input:
+        ans_ls: ans_ls
+      output:
+      - pred_ls
+evaluation:
+  parameter: servers/evaluation/parameter.yaml
+  path: servers/evaluation/src/evaluation.py
+  tools:
+    evaluate:
+      input:
+        gt_ls: gt_ls
+        metrics: $metrics
+        pred_ls: pred_ls
+        save_path: $save_path
+      output:
+      - eval_res
+generation:
+  parameter: servers/generation/parameter.yaml
+  path: servers/generation/src/generation.py
+  tools:
+    generate:
+      input:
+        api_key: $api_key
+        base_url: $base_url
+        model_name: $model_name
+        prompt_ls: prompt_ls
+        sampling_params: $sampling_params
+      output:
+      - ans_ls
+    initialize_local_vllm:
+      input:
+        api_key: $api_key
+        gpu_ids: $gpu_ids
+        model_name: $model_name
+        model_path: $model_path
+        port: $port
+      output:
+      - $base_url
+prompt:
+  parameter: servers/prompt/parameter.yaml
+  path: servers/prompt/src/prompt.py
+  prompts:
+    qa_rag_boxed:
+      input:
+        q_ls: q_ls
+        ret_psg: ret_psg
+        template: $template
+      output:
+      - prompt_ls
+retriever:
+  parameter: servers/retriever/parameter.yaml
+  path: servers/retriever/src/retriever.py
+  tools:
+    retriever_init:
+      input:
+        corpus_path: $corpus_path
+        cuda_devices: $cuda_devices
+        faiss_use_gpu: $faiss_use_gpu
+        index_path: $index_path
+        infinity_kwargs: $infinity_kwargs
+        is_multimodal: $is_multimodal
+        retriever_path: $retriever_path
+    retriever_search:
+      input:
+        query_instruction: $query_instruction
+        query_list: q_ls
+        top_k: $top_k
+        use_openai: $use_openai
+      output:
+      - ret_psg

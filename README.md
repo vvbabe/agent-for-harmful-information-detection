@@ -155,3 +155,11 @@ pytest -q
 
 ![alt text](image.png)
 清洗过的数据
+
+
+现已实现知识库索引编码
+
+  embedding_path: embedding/embedding.npy
+  faiss_use_gpu: true
+  index_chunk_size: 50000
+  index_path: index/index.index

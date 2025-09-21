@@ -1,0 +1,55 @@
+benchmark:
+  benchmark:
+    key_map:
+      gt_ls: golden_answers
+      q_ls: question
+    limit: -1
+    name: nq
+    path: data/benign_bench.jsonl
+    seed: 42
+    shuffle: false     # 随机抽取 1000 条
+custom: {}
+evaluation:
+  metrics:
+  - acc
+  - f1
+  - em
+  - coverem
+  - stringem
+  - rouge-1
+  - rouge-2
+  - rouge-l
+  save_path: output/evaluate_results.json
+generation:
+  api_key: ''
+  base_url: http://localhost:8000/v1
+  gpu_ids: "1"
+  model_name: deepseek-r1-1.5b
+  model_path: ../models/deepseek-r1-1.5b
+  port: 8006
+  sampling_params:
+    extra_body:
+      chat_template_kwargs:
+        enable_thinking: false
+      top_k: 20
+    max_tokens: 2048
+    temperature: 0.7
+    top_p: 0.8
+prompt:
+  template: prompt/qa_rag_boxed.jinja
+retriever:
+  corpus_path: data/benign_c_50.jsonl
+  cuda_devices: '0'
+  faiss_use_gpu: true
+  index_path: index/index.index
+  infinity_kwargs:
+    batch_size: 16
+    bettertransformer: false
+    device: cuda
+    model_warmup: false
+    pooling_method: auto
+  is_multimodal: false
+  query_instruction: 'Query: '
+  retriever_path: ../models/all-MiniLM-L6-v2
+  top_k: 5
+  use_openai: false

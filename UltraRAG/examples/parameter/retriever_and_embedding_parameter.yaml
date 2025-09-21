@@ -1,0 +1,16 @@
+retriever:
+  corpus_path:  data/benign_c_50.jsonl
+  cuda_devices: 0,1
+  embedding_path: embedding/embedding.npy
+  faiss_use_gpu: true
+  index_chunk_size: 50000
+  index_path: index/index.index
+  infinity_kwargs:
+    batch_size: 16
+    bettertransformer: false
+    device: cuda
+    model_warmup: false
+    pooling_method: auto
+  is_multimodal: false
+  overwrite: false
+  retriever_path: ../models/all-MiniLM-L6-v2

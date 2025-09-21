@@ -1,0 +1,12 @@
+path: servers/evaluation/src/evaluation.py
+parameter: servers/evaluation/parameter.yaml
+tools:
+  evaluate:
+    input:
+      pred_ls: pred_ls
+      gt_ls: gt_ls
+      metrics: $metrics
+      save_path: $save_path
+    output:
+    - eval_res
+prompts: {}

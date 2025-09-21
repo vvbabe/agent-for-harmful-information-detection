@@ -1,0 +1,3 @@
+[09/18/25 03:26:09] INFO [UltraRAG.benchmark] Loading data: data/Benign-Monday-no-metadata_corpus.jsonl
+[09/18/25 03:26:10] INFO [UltraRAG.benchmark] Loaded from data/Benign-Monday-no-metadata_corpus.jsonl
+[09/18/25 03:26:11] INFO [UltraRAG.benchmark] Loaded benchmark: ('nq', 'data/Benign-Monday-no-metadata_corpus.jsonl')

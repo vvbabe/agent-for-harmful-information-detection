@@ -1,0 +1,93 @@
+path: servers/retriever/src/retriever.py
+parameter: servers/retriever/parameter.yaml
+tools:
+  retriever_init:
+    input:
+      retriever_path: $retriever_path
+      corpus_path: $corpus_path
+      index_path: $index_path
+      faiss_use_gpu: $faiss_use_gpu
+      infinity_kwargs: $infinity_kwargs
+      cuda_devices: $cuda_devices
+      is_multimodal: $is_multimodal
+  retriever_init_openai:
+    input:
+      corpus_path: $corpus_path
+      openai_model: $openai_model
+      api_base: $api_base
+      api_key: $api_key
+      faiss_use_gpu: $faiss_use_gpu
+      index_path: $index_path
+      cuda_devices: $cuda_devices
+  retriever_embed:
+    input:
+      embedding_path: $embedding_path
+      overwrite: $overwrite
+      is_multimodal: $is_multimodal
+  retriever_embed_openai:
+    input:
+      embedding_path: $embedding_path
+      overwrite: $overwrite
+  retriever_index:
+    input:
+      embedding_path: $embedding_path
+      index_path: $index_path
+      overwrite: $overwrite
+      index_chunk_size: $index_chunk_size
+  retriever_index_lancedb:
+    input:
+      embedding_path: $embedding_path
+      lancedb_path: $lancedb_path
+      table_name: $table_name
+      overwrite: $overwrite
+  retriever_search:
+    input:
+      query_list: q_ls
+      top_k: $top_k
+      query_instruction: $query_instruction
+      use_openai: $use_openai
+    output:
+    - ret_psg
+  retriever_search_maxsim:
+    input:
+      query_list: q_ls
+      embedding_path: $embedding_path
+      top_k: $top_k
+      query_instruction: $query_instruction
+    output:
+    - ret_psg
+  retriever_search_lancedb:
+    input:
+      query_list: q_ls
+      top_k: $top_k
+      query_instruction: $query_instruction
+      use_openai: $use_openai
+      lancedb_path: $lancedb_path
+      table_name: $table_name
+      filter_expr: $filter_expr
+    output:
+    - ret_psg
+  retriever_deploy_service:
+    input:
+      retriever_url: $retriever_url
+  retriever_deploy_search:
+    input:
+      retriever_url: $retriever_url
+      query_list: q_ls
+      top_k: $top_k
+      query_instruction: $query_instruction
+    output:
+    - ret_psg
+  retriever_exa_search:
+    input:
+      query_list: q_ls
+      top_k: $top_k
+    output:
+    - ret_psg
+  retriever_tavily_search:
+    input:
+      query_list: q_ls
+      top_k: $top_k
+    output:
+    - ret_psg
+prompts: {}

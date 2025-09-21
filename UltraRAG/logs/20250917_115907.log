@@ -1,0 +1,4 @@
+[09/17/25 11:59:07] INFO [UltraRAG.Client] Executing pipeline with configuration examples/retriever_and_embedding.yaml
+[09/17/25 11:59:07] INFO [UltraRAG.Client] Initializing servers...
+[09/17/25 11:59:07] INFO [UltraRAG.Client] Available tools: ['retriever_init', 'retriever_init_openai', 'retriever_embed', 'retriever_embed_openai', 'retriever_index', 'retriever_index_lancedb', 'retriever_search', 'retriever_search_maxsim', 'retriever_search_lancedb', 'retriever_deploy_service', 'retriever_deploy_search', 'retriever_exa_search', 'retriever_tavily_search']
+[09/17/25 11:59:07] INFO [UltraRAG.Client] Executing step: retriever.retriever_init

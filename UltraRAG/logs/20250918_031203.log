@@ -1,0 +1,13 @@
+[09/18/25 03:12:03] INFO [UltraRAG.Client] Building configuration examples/vanilla_rag.yaml
+[09/18/25 03:12:03] WARNING [UltraRAG.Client] No parameter.yaml found for custom, skipping
+[09/18/25 03:12:03] INFO [UltraRAG.Client] Building server configs
+[09/18/25 03:12:08] INFO [UltraRAG.Client] server.yaml for benchmark has been built already
+[09/18/25 03:12:08] INFO [UltraRAG.Client] server.yaml for retriever has been built already
+[09/18/25 03:12:08] INFO [UltraRAG.Client] server.yaml for generation has been built already
+[09/18/25 03:12:08] INFO [UltraRAG.Client] server.yaml for prompt has been built already
+[09/18/25 03:12:08] INFO [UltraRAG.Client] server.yaml for custom has been built already
+[09/18/25 03:12:08] INFO [UltraRAG.Client] server.yaml for evaluation has been built already
+[09/18/25 03:12:08] INFO [UltraRAG.Client] Saving all parameters to examples/parameter/vanilla_rag_parameter.yaml
+[09/18/25 03:12:08] INFO [UltraRAG.Client] Saving all server configs to examples/server/vanilla_rag_server.yaml
+[09/18/25 03:12:08] INFO [UltraRAG.Client] All parameters have been saved in examples/parameter/vanilla_rag_parameter.yaml
+[09/18/25 03:12:08] INFO [UltraRAG.Client] All server configurations have been saved in examples/server/vanilla_rag_server.yaml
