@@ -1,0 +1,4 @@
+[09/21/25 05:20:51] INFO [UltraRAG.generation] Starting vLLM model on GPU(s): 1
+[09/21/25 05:20:51] INFO [UltraRAG.generation] Waiting for vLLM service at http://localhost:8006/v1 to be ready...
+[09/21/25 05:21:15] INFO [UltraRAG.generation] vLLM service is ready.
+[09/21/25 05:21:15] INFO [UltraRAG.generation] vLLM service started at http://localhost:8006/v1

@@ -26,5 +26,5 @@ pipeline:
 - generation.generate
 #方便评估，利用boxed功能
 - custom.output_extract_from_boxed
-#评估答案
-- evaluation.evaluate
+# #评估答案
+# - evaluation.evaluate

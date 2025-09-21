@@ -14,4 +14,4 @@ pipeline:
 - prompt.qa_boxed
 - generation.generate
 - custom.output_extract_from_boxed
-- evaluation.evaluate
+# - evaluation.evaluate

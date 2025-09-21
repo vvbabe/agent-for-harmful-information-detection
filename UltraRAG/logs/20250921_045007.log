@@ -1,0 +1,3 @@
+[09/21/25 04:50:19] INFO [UltraRAG.benchmark] Loading data: data/benign_bench.jsonl
+[09/21/25 04:50:19] INFO [UltraRAG.benchmark] Loaded from data/benign_bench.jsonl
+[09/21/25 04:50:19] INFO [UltraRAG.benchmark] Loaded benchmark: ('nq', 'data/benign_bench.jsonl')
