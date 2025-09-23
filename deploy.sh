@@ -4,7 +4,7 @@
 
 set -e
 
-echo "开始部署网络威胁检测系统..."
+echo "🚀 开始部署网络威胁检测系统..."
 
 # 颜色定义
 RED='\033[0;31m'
@@ -63,17 +63,17 @@ deploy_services() {
     
     # 检查服务状态
     if docker-compose ps | grep -q "Up"; then
-        print_status "服务启动成功!"
+        print_status "✅ 服务启动成功!"
         echo ""
-        echo "应用访问地址:"
+        echo "🌐 应用访问地址:"
         echo "   - 本地: http://localhost:7860"
         echo "   - 网络: http://$(hostname -I | awk '{print $1}'):7860"
         echo ""
-        echo "服务状态:"
+        echo "📊 服务状态:"
         docker-compose ps
         echo ""
-        echo "查看日志: docker-compose logs -f"
-        echo "停止服务: docker-compose down"
+        echo "📝 查看日志: docker-compose logs -f"
+        echo "🛑 停止服务: docker-compose down"
     else
         print_error "服务启动失败"
         echo "查看错误日志:"
@@ -109,9 +109,9 @@ main() {
     deploy_services
     
     echo ""
-    echo "部署完成！"
+    echo "🎉 部署完成！"
     echo ""
-    echo "提示："
+    echo "💡 提示："
     echo "   - 首次启动可能需要下载依赖，请耐心等待"
     echo "   - 如遇问题，请查看日志: docker-compose logs -f"
     echo "   - 更新代码后重新部署: ./deploy.sh"
