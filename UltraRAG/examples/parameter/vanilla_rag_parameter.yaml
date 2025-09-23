@@ -23,7 +23,7 @@ evaluation:
 generation:
   api_key: ''
   base_url: http://localhost:8000/v1
-  gpu_ids: "1"
+  gpu_ids: 0,1
   model_name: deepseek-r1-1.5b
   model_path: ../models/deepseek-r1-1.5b
   port: 8006
