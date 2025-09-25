@@ -1,0 +1,14 @@
+[
+  {
+    "step": "retriever.retriever_init",
+    "memory": {}
+  },
+  {
+    "step": "retriever.retriever_embed",
+    "memory": {}
+  },
+  {
+    "step": "retriever.retriever_index",
+    "memory": {}
+  }
+]

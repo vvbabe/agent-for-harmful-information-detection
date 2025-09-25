@@ -1,6 +1,6 @@
 retriever:
-  corpus_path:  data/benign_c_50.jsonl
-  cuda_devices: 0,1
+  corpus_path:  data/all_corpus.jsonl
+  cuda_devices: '0'
   embedding_path: embedding/embedding.npy
   faiss_use_gpu: true
   index_chunk_size: 50000

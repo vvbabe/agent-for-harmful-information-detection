@@ -5,7 +5,7 @@ benchmark:
       q_ls: question
     limit: -1
     name: nq
-    path: data/benign_bench.jsonl
+    path: data/botnet_100.jsonl
     seed: 42
     shuffle: false     # 随机抽取 1000 条
 custom: {}
@@ -23,7 +23,7 @@ evaluation:
 generation:
   api_key: ''
   base_url: http://localhost:8000/v1
-  gpu_ids: 0,1
+  gpu_ids: '0'
   model_name: deepseek-r1-1.5b
   model_path: ../models/deepseek-r1-1.5b
   port: 8006
@@ -31,21 +31,23 @@ generation:
     extra_body:
       chat_template_kwargs:
         enable_thinking: false
-      top_k: 20
+      top_k: 10
     max_tokens: 2048
     temperature: 0.7
     top_p: 0.8
+
 prompt:
   template: prompt/qa_rag_boxed.jinja
+
 retriever:
-  corpus_path: data/benign_c_50.jsonl
-  cuda_devices: '0'
-  faiss_use_gpu: true
+  corpus_path: data/corpus_id.jsonl
+  cuda_devices: ''          # 👈 清空或删掉，不指定 GPU
+  faiss_use_gpu: false      # 👈 明确设为 false
   index_path: index/index.index
   infinity_kwargs:
     batch_size: 16
     bettertransformer: false
-    device: cuda
+    device: cpu             # 👈 改成 cpu
     model_warmup: false
     pooling_method: auto
   is_multimodal: false
@@ -53,3 +55,22 @@ retriever:
   retriever_path: ../models/all-MiniLM-L6-v2
   top_k: 5
   use_openai: false
+
+# prompt:
+#   template: prompt/qa_rag_boxed.jinja
+# retriever:
+#   corpus_path: data/corpus_id.jsonl
+#   cuda_devices: '0'
+#   faiss_use_gpu: true
+#   index_path: index/index.index
+#   infinity_kwargs:
+#     batch_size: 16
+#     bettertransformer: false
+#     device: cuda
+#     model_warmup: false
+#     pooling_method: auto
+#   is_multimodal: false
+#   query_instruction: 'Query: '
+#   retriever_path: ../models/all-MiniLM-L6-v2
+#   top_k: 5
+#   use_openai: false

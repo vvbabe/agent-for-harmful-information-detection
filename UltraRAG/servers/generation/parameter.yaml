@@ -5,7 +5,7 @@ base_url: http://localhost:8000/v1 # vllm server url
 api_key: "EMPTY" # set to "EMPTY" if no api key is needed
 # init vllm server configs
 port: 8000
-gpu_ids: "0,1"
+gpu_ids: "0"
 api_key: ""
 
 # generation parameters
